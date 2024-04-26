@@ -6,6 +6,18 @@ import { Button } from "../subframe/components/Button";
 import { useNavigate,Link } from 'react-router-dom';
 import { LinkButton } from "../subframe/components/LinkButton";
 
+/**
+ * Component for handling user authentication and login
+ * @component
+ * @example
+ *   <AuthPage setIsLoggedIn={setIsLoggedIn} />
+ * @prop {function} setIsLoggedIn - Function to set the user's login status
+ * @description
+ *   - Uses useState hook to manage state variables for username, password, and error
+ *   - Uses useNavigate hook for navigation
+ *   - Handles login logic and displays login form
+ *   - Uses TextField and Button components for form inputs and submission
+ */
 function AuthPage({ setIsLoggedIn }){
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

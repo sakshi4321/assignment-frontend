@@ -15,6 +15,23 @@ import { CheckboxGroup } from "../subframe/components/CheckboxGroup";
 import { Progress } from "../subframe/components/Progress";
 
 
+/**
+ * Displays a dashboard for tracking inventory items.
+ * @component
+ * @example
+ *   <ItemPage onLogout={handleLogout} />
+ * @prop {function} onLogout - Function to handle logout.
+ * @description
+ *   - Uses the onLogout prop to handle logout functionality.
+ *   - Uses useState to manage modal state and search term.
+ *   - Uses useEffect to fetch items on component mount and when selected category changes.
+ *   - Uses handleCategorySelect to update selected category and fetch items for that category.
+ *   - Uses handleSearchChange to update search term and filter items based on SKU.
+ *   - Uses filteredItems state variable to display items in the table.
+ *   - Uses getTagIcon function to get the corresponding icon for each tag.
+ *   - Uses Progress component to display the percentage of available stock.
+ *   - Uses SubframeCore components for buttons, dropdown menus, and icons.
+ */
 function ItemPage({onLogout}) {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);

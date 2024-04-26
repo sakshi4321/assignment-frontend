@@ -5,6 +5,20 @@ import AuthPage from "./pages/authPage";
 import ItemPage from "./pages/itemPage";
 import { useState } from "react";
 import SignupPage from "./pages/signupPage";
+/**
+ * Renders a ReactJS component that handles user authentication and redirects to protected pages if user is logged in.
+ * @component
+ * @example
+ *   <App />
+ * @state {boolean} isLoggedIn - Keeps track of whether the user is logged in or not.
+ * @state {function} setIsLoggedIn - Sets the value of isLoggedIn.
+ * @prop {function} handleLogout - Function to log the user out.
+ * @description
+ *   - Uses useState hook to keep track of isLoggedIn state.
+ *   - Uses ProtectedRoute component to redirect to protected pages if user is logged in.
+ *   - Uses BrowserRouter and Routes to handle routing.
+ *   - Uses Route and Navigate components to redirect to different pages.
+ */
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogout = () => {

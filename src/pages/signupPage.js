@@ -7,6 +7,33 @@ import * as SubframeCore from "@subframe/core";
 import { Button } from "../subframe/components/Button";
 import { Link } from 'react-router-dom';
 
+/**
+ * A component for user signup page
+ * @component
+ * @example
+ *   <SignupPage />
+ * @description
+ *   - This component renders a signup page for new users.
+ *   - It collects user's email, username, and password for registration.
+ *   - It communicates with the backend to handle form submission and display error messages.
+ *   - Upon successful registration, it redirects the user to the homepage.
+ * @state {string} company - The user's email address
+ * @state {string} username - The user's desired username
+ * @state {string} password - The user's desired password
+ * @state {string} error - Error message to be displayed if registration fails
+ * @prop {string} variant - The color variant of the button (e.g. "brand", "brand-primary")
+ * @prop {string} size - The size of the button (e.g. "small", "medium")
+ * @prop {string} icon - The name of the icon to be displayed on the button (e.g. "FeatherMail")
+ * @prop {string} iconRight - The name of the icon to be displayed on the right side of the button (e.g. "FeatherChevronRight")
+ * @prop {boolean} loading - Indicates if the button is in a loading state
+ * @lifecycle
+ *   componentDidMount - Called after the component is mounted. Used to fetch data from the backend.
+ *   componentDidUpdate - Called after the component is updated. Used to handle form submission and display error messages.
+ * @key_rendering_logic
+ *   - The handleSubmit function handles form submission by creating an object with the user's input and sending it to the backend.
+ *   - The Button component is used to display the "Sign up" button and handle its click event.
+ *   - The LinkButton component is used to display links to the Terms of Service and Privacy Policy pages.
+ */
 function SignupPage() {
   const [company, setCompany] = useState('');
   const [username, setUsername] = useState('');

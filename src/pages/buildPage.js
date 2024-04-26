@@ -8,6 +8,20 @@ import { TextField } from "../subframe/components/TextField";
 import { IconButton } from "../subframe/components/IconButton";
 
 
+/**
+ * Component for displaying build tracker page
+ * @component
+ * @example
+ *   <BuildPage onLogout={handleLogout} />
+ * @prop {function} onLogout - Function to handle logout
+ * @description
+ *   - Uses useState hook to manage expandedRow state variable
+ *   - Uses useNavigate hook for navigation
+ *   - Uses data array for table data
+ *   - Uses toggleRow function to toggle expandedRow state variable
+ *   - Uses Button, Tabs, TextField, and IconButton components for UI elements
+ *   - Uses table and React.Fragment for rendering table data and expanded content
+ */
 function BuildPage({onLogout}) {
   
   const [expandedRow, setExpandedRow] = useState(null);
