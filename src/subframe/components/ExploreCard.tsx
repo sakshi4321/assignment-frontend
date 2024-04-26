@@ -1,4 +1,9 @@
 "use client";
+/*
+ * Documentation:
+ * Explore Card — https://app.subframe.com/library?component=Explore+Card_bca37f79-4fe8-49fe-8b6c-8e512ba4845b
+ * Icon with background — https://app.subframe.com/library?component=Icon+with+background_c5d68c0e-4c0c-4cff-8d8c-6ff334859b3a
+ */
 
 import React from "react";
 import * as SubframeCore from "@subframe/core";

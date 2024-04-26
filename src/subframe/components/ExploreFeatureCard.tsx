@@ -1,4 +1,8 @@
 "use client";
+/*
+ * Documentation:
+ * Explore Feature Card — https://app.subframe.com/library?component=Explore+Feature+Card_976ac54f-5cc3-4e1c-ba2c-2b323bcaf846
+ */
 
 import React from "react";
 import * as SubframeCore from "@subframe/core";
